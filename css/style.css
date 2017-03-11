@@ -61,6 +61,7 @@ html, body {
 }
 
 body {
+  /*background: #000000;*/
   background: #16a085;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -88,7 +89,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.015em;
 }
-h1::after {
+/*h1::after {
   content: '';
   width: 80px;
   display: block;
@@ -96,7 +97,7 @@ h1::after {
   height: 10px;
   margin: 30px auto;
   line-height: 1.1;
-}
+}*/
 p {
   line-height: 3px;
   margin: 0 0 30px 0;
