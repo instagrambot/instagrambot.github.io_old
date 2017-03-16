@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Instabot | Tutorials</title>
+    <title>Instabot</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -47,25 +47,40 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#about">Installation</a></li>
+            <li><a href="#about">Documentation</a></li>
+            <li><a href="#contact">Faq</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Examples <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">How to install and update</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="/">Collect stats</a></li>
+                <li><a href="#">Follow user followers</a></li>
+                <li><a href="#">Follow user following</a></li>
+                <li><a href="#">Follow users by hashtag</a></li>
+                <li><a href="#">Follow users from file</a></li>
+                <li><a href="#">Infinity feedliker</a></li>
+                <li><a href="#">Like and follow last user media likers</a></li>
                 <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li class="dropdown-header">Liki</li>
+                <li><a href="#">Like users</a></li>
+                <li><a href="#">Unlike users</a></li>
+                <li><a href="#">Like and follow media likers</a></li>
+                <li><a href="#">Like hashtags</a></li>
+                <li><a href="#">Like hashtags from file</a></li>
+                <li><a href="#">Like timeline feed</a></li>
+                <li><a href="#">Like user followers</a></li>
+                <li><a href="#">Like user following</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Unfollow</li>
+                <li><a href="#">Unfollow everyone</a></li>
+                <li><a href="#">Unfollow non followers</a></li>
               </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar-static-top/">About</a></li>
-            <li><a href="./">Contact<span class="sr-only">(current)</span></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact<span class="sr-only">(current)</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -84,14 +99,13 @@
 
 			<div class="highlight highlight-source-python"><pre>pip install <span class="pl-k">-</span>U instabot</pre></div>
 
-			<p>Full installation steps for UNIX (Linux, macOS) users <a href="https://github.com/ohld/instabot/blob/master/docs/installation/Unix_installation.md">here</a>. If you are Windows user, go to <a href="https://github.com/ohld/instabot/blob/master/docs/installation/Windows_installation.md">Windows installation</a>.</p>
+			<p>Full installation steps for UNIX (Linux, macOS) users <a href="https://github.com/ohld/instabot/blob/master/docs/installation/Unix installation.md">here</a>. If you are Windows user, go to <a href="https://github.com/ohld/instabot/blob/master/docs/installation/Windows installation.md">Windows installation</a>.</p>
 
 			<h2><a id="user-content-how-to-run" class="anchor" href="#how-to-run" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to run</h2>
 
 			<p>Choose any script from <a href="https://github.com/ohld/instabot/tree/master/examples">examples</a> and run:</p>
 
-			<pre><code>python example.py
-			</code></pre>
+			<pre><code>python example.py</code></pre>
 
 			<p>If you have any problems with script, please ask questions in the <a href="https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg">Telegram chat</a>.</p>
 
@@ -99,33 +113,31 @@
 
 			<h3><a id="user-content-bot-class" class="anchor" href="#bot-class" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bot Class</h3>
 
-			<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> instabot <span class="pl-k">import</span> Bot
-			bot <span class="pl-k">=</span> Bot(
-			            <span class="pl-v">proxy</span><span class="pl-k">=</span><span class="pl-c1">None</span>,
-			            <span class="pl-v">max_likes_per_day</span><span class="pl-k">=</span><span class="pl-c1">1000</span>,
-			            <span class="pl-v">max_unlikes_per_day</span><span class="pl-k">=</span><span class="pl-c1">1000</span>,
-			            <span class="pl-v">max_follows_per_day</span><span class="pl-k">=</span><span class="pl-c1">350</span>,
-			            <span class="pl-v">max_unfollows_per_day</span><span class="pl-k">=</span><span class="pl-c1">350</span>,
-			            <span class="pl-v">max_comments_per_day</span><span class="pl-k">=</span><span class="pl-c1">100</span>,
-			            <span class="pl-v">max_likes_to_like</span><span class="pl-k">=</span><span class="pl-c1">100</span>,
-			            <span class="pl-v">max_followers_to_follow</span><span class="pl-k">=</span><span class="pl-c1">2000</span>,
-			            <span class="pl-v">min_followers_to_follow</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
-			            <span class="pl-v">max_following_to_follow</span><span class="pl-k">=</span><span class="pl-c1">10000</span>,
-			            <span class="pl-v">min_following_to_follow</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
-			            <span class="pl-v">max_followers_to_following_ratio</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
-			            <span class="pl-v">max_following_to_followers_ratio</span><span class="pl-k">=</span><span class="pl-c1">2</span>,
-			            <span class="pl-v">min_media_count_to_follow</span><span class="pl-k">=</span><span class="pl-c1">3</span>,
-			            <span class="pl-v">like_delay</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
-			            <span class="pl-v">unlike_delay</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
-			            <span class="pl-v">follow_delay</span><span class="pl-k">=</span><span class="pl-c1">30</span>,
-			            <span class="pl-v">unfollow_delay</span><span class="pl-k">=</span><span class="pl-c1">30</span>,
-			            <span class="pl-v">comment_delay</span><span class="pl-k">=</span><span class="pl-c1">60</span>,
-			            <span class="pl-v">whitelist</span><span class="pl-k">=</span><span class="pl-c1">False</span>,
-			            <span class="pl-v">blacklist</span><span class="pl-k">=</span><span class="pl-c1">False</span>,
-			            <span class="pl-v">comments_file</span><span class="pl-k">=</span><span class="pl-c1">False</span>,
-			            <span class="pl-v">stop_words</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>shop<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>store<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>free<span class="pl-pds">'</span></span>]
-			)</pre></div>
-
+			<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> instabot <span class="pl-k">import</span> Bot <br>bot <span class="pl-k">=</span> Bot(
+    	<span class="pl-v">proxy</span><span class="pl-k">=</span><span class="pl-c1">None</span>,
+    	<span class="pl-v">max likes per day</span><span class="pl-k">=</span><span class="pl-c1">1000</span>,
+    	<span class="pl-v">max unlikes per day</span><span class="pl-k">=</span><span class="pl-c1">1000</span>,
+    	<span class="pl-v">max follows per day</span><span class="pl-k">=</span><span class="pl-c1">350</span>,
+    	<span class="pl-v">max unfollows per day</span><span class="pl-k">=</span><span class="pl-c1">350</span>,
+    	<span class="pl-v">max comments per day</span><span class="pl-k">=</span><span class="pl-c1">100</span>,
+    	<span class="pl-v">max likes to like</span><span class="pl-k">=</span><span class="pl-c1">100</span>,
+    	<span class="pl-v">max followers to follow</span><span class="pl-k">=</span><span class="pl-c1">2000</span>,
+    	<span class="pl-v">min followers to follow</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
+    	<span class="pl-v">max following to follow</span><span class="pl-k">=</span><span class="pl-c1">10000</span>,
+    	<span class="pl-v">min following to follow</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
+    	<span class="pl-v">max followers to following ratio</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
+    	<span class="pl-v">max following to followers ratio</span><span class="pl-k">=</span><span class="pl-c1">2</span>,
+    	<span class="pl-v">min media count to follow</span><span class="pl-k">=</span><span class="pl-c1">3</span>,
+    	<span class="pl-v">like delay</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
+    	<span class="pl-v">unlike delay</span><span class="pl-k">=</span><span class="pl-c1">10</span>,
+    	<span class="pl-v">follow delay</span><span class="pl-k">=</span><span class="pl-c1">30</span>,
+    	<span class="pl-v">unfollow delay</span><span class="pl-k">=</span><span class="pl-c1">30</span>,
+    	<span class="pl-v">comment delay</span><span class="pl-k">=</span><span class="pl-c1">60</span>,
+    	<span class="pl-v">whitelist</span><span class="pl-k">=</span><span class="pl-c1">False</span>,
+    	<span class="pl-v">blacklist</span><span class="pl-k">=</span><span class="pl-c1">False</span>,
+    	<span class="pl-v">comments file</span><span class="pl-k">=</span><span class="pl-c1">False</span>,
+    	<span class="pl-v">stop words</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>shop<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>store<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>free<span class="pl-pds">'</span></span>])</pre>
+    	</div>
 			<table><thead>
 			<tr>
 			<th>parameter</th>
@@ -139,97 +151,97 @@
 			<td align="right">None</td>
 			</tr>
 			<tr>
-			<td>max_likes_per_day</td>
+			<td>max likes per day</td>
 			<td align="center">How many likes will bot put per day</td>
 			<td align="right">1000</td>
 			</tr>
 			<tr>
-			<td>max_unlikes_per_day</td>
+			<td>max unlikes per day</td>
 			<td align="center">How many unliked medias in a day</td>
 			<td align="right">1000</td>
 			</tr>
 			<tr>
-			<td>max_follows_per_day</td>
+			<td>max follows per day</td>
 			<td align="center">Max number of follow per day</td>
 			<td align="right">350</td>
 			</tr>
 			<tr>
-			<td>max_unfollows_per_day</td>
+			<td>max unfollows per day</td>
 			<td align="center">Max number of follow per day</td>
 			<td align="right">350</td>
 			</tr>
 			<tr>
-			<td>max_comments_per_day</td>
+			<td>max comments per day</td>
 			<td align="center">Max number of comments per day</td>
 			<td align="right">100</td>
 			</tr>
 			<tr>
-			<td>max_likes_to_like</td>
+			<td>max likes to like</td>
 			<td align="center">If the media has more likes then this value - it will be ignorred to like</td>
 			<td align="right">200</td>
 			</tr>
 			<tr>
-			<td>max_followers_to_follow</td>
+			<td>max followers to follow</td>
 			<td align="center">If the user have more followers than this value - he will not be followed or liked.</td>
 			<td align="right">2000</td>
 			</tr>
 			<tr>
-			<td>min_followers_to_follow</td>
+			<td>min followers to follow</td>
 			<td align="center">If the user have less followers than this value - he will not be followed or liked.</td>
 			<td align="right">10</td>
 			</tr>
 			<tr>
-			<td>max_following_to_follow</td>
+			<td>max following to follow</td>
 			<td align="center">If the user have more following than this value - he will not be followed or liked.</td>
 			<td align="right">10000</td>
 			</tr>
 			<tr>
-			<td>min_following_to_follow</td>
+			<td>min following to follow</td>
 			<td align="center">If the user have less following than this value - he will not be followed or liked.</td>
 			<td align="right">10</td>
 			</tr>
 			<tr>
-			<td>max_followers_to_following_ratio</td>
+			<td>max followers to following ratio</td>
 			<td align="center">if user's followers/following is greater than this value - he will not be followed or liked.</td>
 			<td align="right">10</td>
 			</tr>
 			<tr>
-			<td>max_following_to_followers_ratio</td>
+			<td>max following to followers ratio</td>
 			<td align="center">if user's following/followers is greater than this value - he will not be followed or liked.</td>
 			<td align="right">2</td>
 			</tr>
 			<tr>
-			<td>min_media_count_to_follow</td>
+			<td>min media count to follow</td>
 			<td align="center">If the user have less medias than this value - he will not be followed.</td>
 			<td align="right">3</td>
 			</tr>
 			<tr>
-			<td>max_likes_to_like</td>
+			<td>max likes to like</td>
 			<td align="center">Max number of likes that can media have to be liked</td>
 			<td align="right">100</td>
 			</tr>
 			<tr>
-			<td>like_delay</td>
+			<td>like delay</td>
 			<td align="center">Delay between likes in seconds</td>
 			<td align="right">10</td>
 			</tr>
 			<tr>
-			<td>unlike_delay</td>
+			<td>unlike delay</td>
 			<td align="center">Delay between unlikes in seconds</td>
 			<td align="right">10</td>
 			</tr>
 			<tr>
-			<td>follow_delay</td>
+			<td>follow delay</td>
 			<td align="center">Delay between follows in seconds</td>
 			<td align="right">30</td>
 			</tr>
 			<tr>
-			<td>unfollow_delay</td>
+			<td>unfollow delay</td>
 			<td align="center">Delay between unfollows in seconds</td>
 			<td align="right">30</td>
 			</tr>
 			<tr>
-			<td>comment_delay</td>
+			<td>comment delay</td>
 			<td align="center">Delay between comments in seconds</td>
 			<td align="right">60</td>
 			</tr>
@@ -244,12 +256,12 @@
 			<td align="right">"blacklist.txt"</td>
 			</tr>
 			<tr>
-			<td>comments_file</td>
+			<td>comments file</td>
 			<td align="center">Path to the comments database</td>
 			<td align="right">"comments.txt"</td>
 			</tr>
 			<tr>
-			<td>stop_words</td>
+			<td>stop words</td>
 			<td align="center">A list of stop words: don't follow user if he has any stop word in a description</td>
 			<td align="right">['shop', 'store', 'free']</td>
 			</tr>
@@ -267,79 +279,79 @@
 			</tr>
 			</thead><tbody>
 			<tr>
-			<td>get_your_medias</td>
+			<td>get your medias</td>
 			<td align="center">Get list of your last medias</td>
-			<td align="right">bot.get_you_medias()</td>
+			<td align="right">bot.get you medias()</td>
 			</tr>
 			<tr>
-			<td>get_timeline_medias</td>
-			<td align="center">Get list of media_ids from you timeline feed</td>
-			<td align="right">bot.get_timeline_medias()</td>
+			<td>get timeline medias</td>
+			<td align="center">Get list of media ids from you timeline feed</td>
+			<td align="right">bot.get timeline medias()</td>
 			</tr>
 			<tr>
-			<td>get_user_medias</td>
+			<td>get user medias</td>
 			<td align="center">Get list of user's medias</td>
-			<td align="right">bot.get_user_medias("ohld")</td>
+			<td align="right">bot.get user medias("ohld")</td>
 			</tr>
 			<tr>
-			<td>get_hashtag_medias</td>
+			<td>get hashtag medias</td>
 			<td align="center">Get list of medias by hashtag</td>
-			<td align="right">bot.get_hashtag_medias("Dog")</td>
+			<td align="right">bot.get hashtag medias("Dog")</td>
 			</tr>
 			<tr>
-			<td>get_geotag_medias</td>
+			<td>get geotag medias</td>
 			<td align="center">Get list of medias by geotag</td>
 			<td align="right">TODO</td>
 			</tr>
 			<tr>
-			<td>get_timeline_users</td>
+			<td>get timeline users</td>
 			<td align="center">Get list of users from your timeline feed</td>
-			<td align="right">bot.get_timeline_users()</td>
+			<td align="right">bot.get timeline users()</td>
 			</tr>
 			<tr>
-			<td>get_hashtag_users</td>
+			<td>get hashtag users</td>
 			<td align="center">Get list of users who posted with hashtag</td>
 			<td align="right">TODO</td>
 			</tr>
 			<tr>
-			<td>get_geotag_users</td>
+			<td>get geotag users</td>
 			<td align="center">Get list of users who posted with geotag</td>
 			<td align="right">TODO</td>
 			</tr>
 			<tr>
-			<td>get_userid_from_username</td>
-			<td align="center">Convert username to user_id</td>
+			<td>get userid from username</td>
+			<td align="center">Convert username to user id</td>
 			<td align="right">TODO</td>
 			</tr>
 			<tr>
-			<td>get_user_followers</td>
+			<td>get user followers</td>
 			<td align="center">Get list of user's followers</td>
-			<td align="right">bot.get_user_followers("ohld")</td>
+			<td align="right">bot.get user followers("ohld")</td>
 			</tr>
 			<tr>
-			<td>get_user_following</td>
+			<td>get user following</td>
 			<td align="center">Get list of user's following</td>
-			<td align="right">bot.get_user_following("ohld")</td>
+			<td align="right">bot.get user following("ohld")</td>
 			</tr>
 			<tr>
-			<td>get_media_likers</td>
+			<td>get media likers</td>
 			<td align="center">Get list of media likers</td>
-			<td align="right">bot.get_media_likers("12312412")</td>
+			<td align="right">bot.get media likers("12312412")</td>
 			</tr>
 			<tr>
-			<td>get_media_comments</td>
+			<td>get media comments</td>
 			<td align="center">Get list of media's comments</td>
 			<td align="right">TODO</td>
 			</tr>
 			<tr>
-			<td>get_comment</td>
+			<td>get comment</td>
 			<td align="center">Get comment from comment file</td>
-			<td align="right">bot.get_comment()</td>
+			<td align="right">bot.get comment()</td>
 			</tr>
 			<tr>
-			<td>get_media_commenters</td>
+			<td>get media commenters</td>
 			<td align="center">Get list of users who commented media</td>
-			<td align="right">bot.get_media_commenters("12321")</td>
+			<td align="right">bot.get media commenters("12321")</td>
 			</tr>
 			</tbody></table>
 
@@ -354,31 +366,31 @@
 			</thead><tbody>
 			<tr>
 			<td>like</td>
-			<td align="center">Like media_id</td>
+			<td align="center">Like media id</td>
 			<td align="right">bot.like("1231241210")</td>
 			</tr>
 			<tr>
-			<td>like_medias</td>
+			<td>like medias</td>
 			<td align="center">Like medias from list</td>
-			<td align="right">bot.like_medias(["1323124", "123141245"])</td>
+			<td align="right">bot.like medias(["1323124", "123141245"])</td>
 			</tr>
 			<tr>
-			<td>like_timeline</td>
+			<td>like timeline</td>
 			<td align="center">Like medias from your timeline feed</td>
-			<td align="right">bot.like_timeline()</td>
+			<td align="right">bot.like timeline()</td>
 			</tr>
 			<tr>
-			<td>like_user</td>
+			<td>like user</td>
 			<td align="center">Like last user's medias</td>
-			<td align="right">bot.like_user("ohld")</td>
+			<td align="right">bot.like user("ohld")</td>
 			</tr>
 			<tr>
-			<td>like_hashtag</td>
+			<td>like hashtag</td>
 			<td align="center">Like last medias with hashtag</td>
-			<td align="right">bot.like_hashtag("dog")</td>
+			<td align="right">bot.like hashtag("dog")</td>
 			</tr>
 			<tr>
-			<td>like_geotag</td>
+			<td>like geotag</td>
 			<td align="center">Like last medias with geotag</td>
 			<td align="right">TODO</td>
 			</tr>
@@ -399,9 +411,9 @@
 			<td align="right">bot.unlike("12321412512")</td>
 			</tr>
 			<tr>
-			<td>unlike_medias</td>
+			<td>unlike medias</td>
 			<td align="center">Remove likes from medias in list</td>
-			<td align="right">bot.unlike_medias(["123", "321"])</td>
+			<td align="right">bot.unlike medias(["123", "321"])</td>
 			</tr>
 			</tbody></table>
 
@@ -420,7 +432,7 @@
 			<td align="right">bot.follow("ohld")</td>
 			</tr>
 			<tr>
-			<td>follow_users</td>
+			<td>follow users</td>
 			<td align="center">Follow users from list</td>
 			<td align="right">bot.follow(["ohld", "lenakolenka"])</td>
 			</tr>
@@ -441,14 +453,14 @@
 			<td align="right">bot.unfollow("ohld")</td>
 			</tr>
 			<tr>
-			<td>unfollow_users</td>
+			<td>unfollow users</td>
 			<td align="center">Unfollow users from list</td>
 			<td align="right">bot.unfollow(["ohld", "lenakolenka"])</td>
 			</tr>
 			<tr>
-			<td>unfollow_non_followers</td>
+			<td>unfollow non followers</td>
 			<td align="center">Unfollow users who don't follow you</td>
-			<td align="right">bot.unfollow_non_followers()</td>
+			<td align="right">bot.unfollow non followers()</td>
 			</tr>
 			</tbody></table>
 
@@ -467,29 +479,29 @@
 			<td align="right">bot.comment("1231234", "Nice pic!")</td>
 			</tr>
 			<tr>
-			<td>comment_medias</td>
+			<td>comment medias</td>
 			<td align="center">Put comments under medias from list</td>
-			<td align="right">bot.comment_medias(["123", "321"])</td>
+			<td align="right">bot.comment medias(["123", "321"])</td>
 			</tr>
 			<tr>
-			<td>comment_hashtag</td>
+			<td>comment hashtag</td>
 			<td align="center">Put comments under medias by hashtag</td>
-			<td align="right">bot.comment_hashtag("Dog")</td>
+			<td align="right">bot.comment hashtag("Dog")</td>
 			</tr>
 			<tr>
-			<td>comment_geotag</td>
+			<td>comment geotag</td>
 			<td align="center">Put comments under medias by geotag</td>
 			<td align="right">TODO</td>
 			</tr>
 			<tr>
-			<td>comment_users</td>
+			<td>comment users</td>
 			<td align="center">Put comments under users' last medias</td>
 			<td align="right">TODO</td>
 			</tr>
 			<tr>
-			<td>is_commented</td>
+			<td>is commented</td>
 			<td align="center">Check if media is already commented</td>
-			<td align="right">bot.is_commented("123321")</td>
+			<td align="right">bot.is commented("123321")</td>
 			</tr>
 			</tbody></table>
 
@@ -503,34 +515,34 @@
 			</tr>
 			</thead><tbody>
 			<tr>
-			<td>save_checkpoint()</td>
-			<td align="center">Save <a href="https://github.com/ohld/instabot/blob/master/instabot/bot/bot_checkpoint.py">checkpoint</a> of your account. Return path to it.</td>
-			<td align="right">bot.save_checkpoint("my_cp")</td>
+			<td>save checkpoint()</td>
+			<td align="center">Save <a href="https://github.com/ohld/instabot/blob/master/instabot/bot/bot checkpoint.py">checkpoint</a> of your account. Return path to it.</td>
+			<td align="right">bot.save checkpoint("my cp")</td>
 			</tr>
 			<tr>
-			<td>revert_to_checkpoint(file_path)</td>
+			<td>revert to checkpoint(file path)</td>
 			<td align="center">Unfollow the new following made after checkpoint creation.</td>
-			<td align="right">bot.revert_to_checkpoint("my_cp")</td>
+			<td align="right">bot.revert to checkpoint("my cp")</td>
 			</tr>
 			<tr>
-			<td>load_checkpoint(path)</td>
+			<td>load checkpoint(path)</td>
 			<td align="center">Load checkpoint from path. Return Checkpoint class.</td>
-			<td align="right">cp = bot.load_checkpoint( bot.last_checkpoint_path)</td>
+			<td align="right">cp = bot.load checkpoint( bot.last checkpoint path)</td>
 			</tr>
 			<tr>
-			<td>load_last_checkpoint()</td>
+			<td>load last checkpoint()</td>
 			<td align="center">Load last checkpoint if it was in current session.</td>
-			<td align="right">bot.load_last_checkpoint()</td>
+			<td align="right">bot.load last checkpoint()</td>
 			</tr>
 			<tr>
-			<td>checkpoint_followers_diff(cp)</td>
+			<td>checkpoint followers diff(cp)</td>
 			<td align="center">returns a list of users who become your followers after checkpoint.</td>
-			<td align="right">bot.checkpoint_followers_diff(cp)</td>
+			<td align="right">bot.checkpoint followers diff(cp)</td>
 			</tr>
 			<tr>
-			<td>checkpoint_following_diff(cp)</td>
+			<td>checkpoint following diff(cp)</td>
 			<td align="center">returns a list of users who become your following after checkpoint.</td>
-			<td align="right">bot.checkpoint_following_diff(cp)</td>
+			<td align="right">bot.checkpoint following diff(cp)</td>
 			</tr>
 			</tbody></table>
 
@@ -539,32 +551,25 @@
 			<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> instabot <span class="pl-k">import</span> Bot
 			bot <span class="pl-k">=</span> Bot()
 			bot.login()
-			bot.like_timeline()
-			bot.like_hashtag(<span class="pl-s"><span class="pl-pds">"</span>dog<span class="pl-pds">"</span></span>)
-			bot.comment_hashtag(<span class="pl-s"><span class="pl-pds">"</span>dogs<span class="pl-pds">"</span></span>)
-			bot.like_user(<span class="pl-s"><span class="pl-pds">"</span>ohld<span class="pl-pds">"</span></span>)
+			bot.like timeline()
+			bot.like hashtag(<span class="pl-s"><span class="pl-pds">"</span>dog<span class="pl-pds">"</span></span>)
+			bot.comment hashtag(<span class="pl-s"><span class="pl-pds">"</span>dogs<span class="pl-pds">"</span></span>)
+			bot.like user(<span class="pl-s"><span class="pl-pds">"</span>ohld<span class="pl-pds">"</span></span>)
 			bot.follow(<span class="pl-s"><span class="pl-pds">"</span>ohld<span class="pl-pds">"</span></span>)
-			bot.unfollow_non_followers()</pre></div>
+			bot.unfollow non followers()</pre></div>
 
 			<h2><a id="user-content-docker" class="anchor" href="#docker" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker</h2>
 
 			<p>As long as docker is running on your machine you can build an instabot docker image like this</p>
 
-			<pre><code>docker build -t instabot .
-			</code></pre>
+			<pre><code>docker build -t instabot.</code></pre>
 
 			<p>Then run your image with an example or your custom script:</p>
 
-			<pre><code>docker run --name instabot -p 80:80 -i -t instabot python examples/like_example.py
-			</code></pre>
-
+			<pre><code>docker run --name instabot -p 80:80 -i -t instabot python examples/like example.py</code></pre>
 			<hr>
 
-
 	     </div>	
-
-
-
 
 
     </div> <!-- /container -->
