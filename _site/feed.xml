@@ -5,8 +5,8 @@
     <description>Cool Instagram scripts for promotion and API wrapper. Written in Python.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Oct 2017 22:07:27 +0530</pubDate>
-    <lastBuildDate>Sun, 15 Oct 2017 22:07:27 +0530</lastBuildDate>
+    <pubDate>Mon, 16 Oct 2017 00:17:55 +0530</pubDate>
+    <lastBuildDate>Mon, 16 Oct 2017 00:17:55 +0530</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -303,7 +303,7 @@
 
 &lt;p&gt;Cool Instagram scripts for promotion and API wrapper. Written in Python.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/docs/img/tag%20instabot.png&quot; alt=&quot;Instabot is better than other open-source bots!&quot; title=&quot;Instabot is better than other open-source bots!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/instabot.png&quot; alt=&quot;Instabot is better than other open-source bots!&quot; title=&quot;Instabot is better than other open-source bots!&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;a href=&quot;https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/chat%20on-Telegram-blue.svg&quot; alt=&quot;Telegram Chat&quot; /&gt;&lt;/a&gt;
@@ -313,27 +313,27 @@
 
 &lt;h2 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h2&gt;
 
-&lt;p&gt;Instabot is a module for the Python language, which not only implements the wrapper over the Instagram API, but also various useful functions, such as “subscribe to the list of people”, “like photos by hashtags”, “unsubscribe from non-followers” and so on. Instabot is smart enough: &lt;a href=&quot;/docs/en/Filtration.md&quot;&gt;read&lt;/a&gt;, for example, how it filters people on which it is going to subscribe.&lt;/p&gt;
+&lt;p&gt;Instabot is a module for the Python language, which not only implements the wrapper over the Instagram API, but also various useful functions, such as “subscribe to the list of people”, “like photos by hashtags”, “unsubscribe from non-followers” and so on. Instabot is smart enough: &lt;a href=&quot;/2017/10/13/Filtration-en.html&quot;&gt;read&lt;/a&gt;, for example, how it filters people on which it is going to subscribe.&lt;/p&gt;
 
 &lt;h2 id=&quot;ask-a-question&quot;&gt;Ask a Question&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;For error messages, use this &lt;a href=&quot;https://github.com/instagrambot/instabot/issues&quot;&gt;page&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;If you have questions or would like to share your experience using Instabot, please write to our &lt;a href=&quot;https://t.me/instabotproject&quot;&gt;Telegram&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;You can find answers to the most popular questions &lt;a href=&quot;/docs/en/FAQ.md&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;You can find answers to the most popular questions &lt;a href=&quot;/2017/10/13/FAQ-en.html&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
 &lt;p&gt;You can read the instructions for installing Instabot, following the link below.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Installing on &lt;a href=&quot;/docs/en/Installation_on_Windows.md&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
-  &lt;li&gt;Installing on &lt;a href=&quot;/docs/en/Installation_on_Unix.md&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Installing on &lt;a href=&quot;/2017/10/13/Installation-on-Windows-en.html&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
+  &lt;li&gt;Installing on &lt;a href=&quot;/2017/10/13/Installation-on-Unix-en.html&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;how-to-use&quot;&gt;How to use&lt;/h2&gt;
 
-&lt;p&gt;Read the instructions for use &lt;a href=&quot;/docs/en/How_to_use.md&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Read the instructions for use &lt;a href=&quot;/2017/10/13/How-to-use-en.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;update&quot;&gt;Update&lt;/h2&gt;
 
@@ -345,7 +345,7 @@
 
 &lt;h2 id=&quot;developers&quot;&gt;Developers&lt;/h2&gt;
 
-&lt;p&gt;Developers better read the &lt;a href=&quot;/docs/en/For_developers.md&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Developers better read the &lt;a href=&quot;/2017/10/13/For-developers-en.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
         <link>http://localhost:4000/2017/10/13/why-InstaBot-en.html</link>
@@ -659,7 +659,7 @@ b) Installare il client Git:&lt;/p&gt;
   &lt;li&gt;Follow the instructions that the installer offers you. Check “Add Python 3.x to Path” and click on Install Now (see the figure below). If you are an experienced user, select Customize installation.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;/docs/img/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;downloading-a-project-from-github&quot;&gt;Downloading a project from GitHub&lt;/h2&gt;
 
