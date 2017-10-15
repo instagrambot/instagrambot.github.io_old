@@ -1,0 +1,33 @@
+title: InstaBot
+email: danokhlopkov@gmail.com
+author: InstaBot
+description: 'Cool Instagram scripts for promotion and API wrapper. Written in Python.'
+keywords: 'instabot, bot, instagrambot, instagram, insta, autolikes, instagramfollow, python-instagram, python-insta-bot,'
+url: https://jagjeet.me/instagrambot.github.io/
+timezone: Asia/Kolkata
+github_username: instagrambot
+
+links:
+  repo: 'https://github.com/instagrambot/instabot'
+  github: 'https://github.com/instagrambot'
+  telegram: 'https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg'
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-mentions
+  - jemoji
+  - jekyll-gist
+
+exclude: 
+  - vendor
+  - LICENSE.md
+  - README.md
+

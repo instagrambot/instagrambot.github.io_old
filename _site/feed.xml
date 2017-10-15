@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>InstaBot</title>
+    <description>Cool Instagram scripts for promotion and API wrapper. Written in Python.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 15 Oct 2017 22:07:27 +0530</pubDate>
+    <lastBuildDate>Sun, 15 Oct 2017 22:07:27 +0530</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>How to use</title>
+        <description>&lt;h1 id=&quot;Інструкція-по-застосуванню&quot;&gt;Інструкція по застосуванню&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Важливо! Прочитайте інструкцію від початку до кінця, а потім дійте! Хай щастить!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;Як-працювати&quot;&gt;Як працювати?&lt;/h2&gt;
+
+&lt;p&gt;Вам знадобиться скачаний проект. В папці &lt;em&gt;** instabot / examples / **&lt;/em&gt; знаходяться скрипти для роботи.&lt;/p&gt;
+
+&lt;h2 id=&quot;Як-запустити-скрипт&quot;&gt;Як запустити скрипт?&lt;/h2&gt;
+
+&lt;p&gt;Відкрийте командний рядок, за допомогою команди &lt;em&gt;** cd **&lt;/em&gt; перейдіть в каталог проекту, а саме &lt;em&gt;** instabot / examples **&lt;/em&gt;.
+Наберіть.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;де &lt;strong&gt;&lt;em&gt;name&lt;/em&gt;&lt;/strong&gt; - назва скрипта, &lt;strong&gt;&lt;em&gt;param&lt;/em&gt;&lt;/strong&gt; - необхідний параметр для запуску скрипта. Але не для всіх скриптів потрібен параметр.&lt;/p&gt;
+
+&lt;h2 id=&quot;Як-дізнатися-чи-необхідний-для-скрипта-вхідний-параметр&quot;&gt;Як дізнатися, чи необхідний для скрипта вхідний параметр?&lt;/h2&gt;
+
+&lt;p&gt;Запустіть скрипт, набравши.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Якщо немає необхідних параметрів, скрипт зупиниться і виведе помилку.&lt;/p&gt;
+
+&lt;p&gt;Приклад.&lt;/p&gt;
+
+&lt;p&gt;Запускаємо скрипт.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;like_hashtags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Скрипт зупиняється і виводить нам повідомлення:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;following&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hashtags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Тобто ми повинні були ввести хештеги.
+Правильний приклад:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;like_hashtags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;follow&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;Все-включено&quot;&gt;Все включено&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;multi_script_CLI.py​​&lt;/em&gt;&lt;/strong&gt; - скрипт, який містить всі функції. При першому його запуску вам буде запропоновано налаштувати скрипт. Налаштування скрипта зберігаються в файлі &lt;strong&gt;&lt;em&gt;setting.txt&lt;/em&gt;&lt;/strong&gt;.
+Також будуть створені файли: &lt;strong&gt;&lt;em&gt;hashtag_file.txt, users_file.txt, whitelist.txt, blacklist.txt, comment.txt&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;247&quot;&gt;24/7&lt;/h2&gt;
+
+&lt;p&gt;Так, є скрипт, який цілодобово фолловіть передплатників і підписки певних людей, а також лайкає фотографії по нікнейму і хештагам. Все це дозволяє скрипт - &lt;strong&gt;&lt;em&gt;ultimate.py&lt;/em&gt;&lt;/strong&gt;, який знаходиться в папці &lt;strong&gt;&lt;em&gt;instabot/examples/ultimate&lt;/em&gt;&lt;/strong&gt;. В папці також знаходяться інші текстові файли для роботи скрипта. У цих файлах кожен новий параметр потрібно писати з нового рядка.&lt;/p&gt;
+
+&lt;h2 id=&quot;Графік-роботи&quot;&gt;Графік роботи&lt;/h2&gt;
+
+&lt;p&gt;Також є скрипт, який буде працювати цілодобово, АЛЕ цей скрипт буде діяти за планом. Цей скрипт - &lt;strong&gt;&lt;em&gt;ultimate.py&lt;/em&gt;&lt;/strong&gt; в папці &lt;strong&gt;&lt;em&gt;instabot/examples/ultimate_schedule&lt;/em&gt;&lt;/strong&gt;. Ви можете відкрити код будь-яким редактором і поправити його. Це буде легко, так як присутні коментарі в важливих частинах коду.&lt;/p&gt;
+
+&lt;h2 id=&quot;Як-правильно-налаштувати-скрипт&quot;&gt;Як правильно налаштувати скрипт&lt;/h2&gt;
+
+&lt;p&gt;Для того, щоб ваш акаунт не був забанений, потрібно налаштувати скрипт.
+Приклад.
+Припустимо нам потрібно лайкати фотографії за хештегом кожну хвилину. Перш за все час в секундах.
+Відкрийте &lt;strong&gt;&lt;em&gt;like_hashtags.py&lt;/em&gt;&lt;/strong&gt; за допомогою текстового редактора. Знайдіть такі рядки (приблизно так вони повинні виглядати)&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bot&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;login&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;          &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;proxy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;proxy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Далі в рядку.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bot&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Нам потрібно написати в дужках параметр. Цим параметром є &lt;strong&gt;&lt;em&gt;like_delay&lt;/em&gt;&lt;/strong&gt;. Цьому параметру потрібно присвоїти значення 60, так як нам потрібно, щоб кожну хвилину бот лайкав фотографію за хештегом.
+У підсумку це буде виглядати ось так&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bot&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;like_delay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;login&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;          &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;proxy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;proxy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;###Список параметрів&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Параметр&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Опис&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Приклад&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;proxy&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Проксі для Instabot&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_likes_per_day&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Скільки лайків в день бот буде проставляти&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_unlikes_per_day&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Скільки лайків в день бот буде прибирати з раніше пролайканийних постів&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_follows_per_day&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Максимальне число нових підписок в день&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;350&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_unfollows_per_day&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Максимальна кількість скасованих підписок в день&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;350&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_comments_per_day&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Максимальне число коментарів, проставлених ботом, в день&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_likes_to_like&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо публікація зібрала більше лайків, ніж це значення - вона буде проігнорована і не буде пролайканийа ботом&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;200&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;filter_users&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Фільтрувати акаунти якщо значення True&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_followers_to_follow&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо акаунт має більше передплатників, ніж це значення, то акаунт не буде зафоловлений або пролайканий&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;min_followers_to_follow&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо акаунт має менше передплатників, ніж це значення, то акаунт не буде зафоловлений або пролайканий&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_following_to_follow&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо акаунт має більше підписок, ніж це значення, то акаунт не буде зафоловлений або пролайканий&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;min_following_to_follow&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо акаунт має менше підписок, ніж це значення, то акаунт не буде зафоловлений або пролайканий&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_followers_to_following_ratio&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо різниця між передплатниками і підписками більш ніж в N раз, то акаунт не буде зафоловлений або пролайканий&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_following_to_followers_ratio&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо різниця між підписками і передплатниками більш ніж в N раз, то акаунт не буде зафоловлений або пролайканий&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;min_media_count_to_follow&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо акаунт має публікацій менше, ніж це значення, то акаунт не буде зафоловлений&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Max_following_to_block&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Якщо акаунт має більш ніж N підписок, то акаунт буде заблокований в блокувальних скриптах, так як він є массфолловером&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max_likes_to_like&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Максимальна кількість лайків, які повинна мати публікація, щоб бот її лайкнув&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;like_delay&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Часовий проміжок між лайками (в секундах)&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;unlike_delay&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Часовий проміжок між дізлайкамі (в секундах)&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;follow_delay&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Часовий проміжок між підписками на акаунти (в секундах)&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;unfollow_delay&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Часовий проміжок між відмінами на підписки раніше зафоловленних ботом акаунтів (в секундах)&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;comment_delay&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Часовий проміжок між проставленням коментарів (в секундах)&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;60&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;whitelist&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Шлях до файлу з назвами акаунтів, підписка на яких повинна зберігатися&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;“Whitelist.txt”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;blacklist&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Шлях до файлу з назвами акаунтів, які не повинні бути зафолловлені, пролайкані або прокоментовані&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;“Blacklist.txt”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;comments_file&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Шлях до бази коментарів&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;“Comments.txt”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;stop_words&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Список заборонених слів: не підписуватися на аккаунт, якщо він має будь-які з цих слів в описі профілю&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;[ ‘Shop’, ‘store’, ‘free’]&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sat, 14 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/14/How-to-use-ukr.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/14/How-to-use-ukr.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Filtration</title>
+        <description>&lt;h1 id=&quot;Как-instabot-фильтрует-людей&quot;&gt;Как Instabot фильтрует людей?&lt;/h1&gt;
+
+&lt;p&gt;Не секрет, что Instabot перед тем, как подписаться на людей, фильтрует их, чтобы не подписываться на заведомо неактивную и фейковую аудиторию. Ниже вы найдете весь список условий, которые применяются в данной фильтрации.&lt;/p&gt;
+
+&lt;h2 id=&quot;Параметры&quot;&gt;Параметры&lt;/h2&gt;
+
+&lt;p&gt;Для начала стоит указать на условия, которые вы вольны изменять. Ниже я приведу те параметры конструктора класса bot, которые относятся к фильтрации.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_likes_to_like&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max_followers_to_follow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;min_followers_to_follow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max_following_to_follow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;min_following_to_follow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max_followers_to_following_ratio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max_following_to_followers_ratio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;min_media_count_to_follow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;stop_words&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'shop'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'store'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'free'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Если вы хотите изменить эти значения на свои в каком-нибудь примере, просто замените строчку &lt;code class=&quot;highlighter-rouge&quot;&gt;bot = Bot()&lt;/code&gt; на эту, но с Вашими значениями.&lt;/p&gt;
+
+&lt;p&gt;Далее я буду писать названия этих параметров вместо самих значений.&lt;/p&gt;
+
+&lt;h2 id=&quot;Фильтрация-пользователей&quot;&gt;Фильтрация пользователей&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Обозначения&lt;/em&gt;: True - можно подписываться, False - нельзя.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Если в белом списке - True,&lt;/li&gt;
+  &lt;li&gt;Если в черном - False,&lt;/li&gt;
+  &lt;li&gt;Если уже подписан на него - False,&lt;/li&gt;
+  &lt;li&gt;Если бизнес аккаунт - False,&lt;/li&gt;
+  &lt;li&gt;Если подтвержденный аккаунт - False,&lt;/li&gt;
+  &lt;li&gt;Если количество подписчиков меньше min_followers_to_follow - False,&lt;/li&gt;
+  &lt;li&gt;Если количество подписчиков больше max_followers_to_follow - False,&lt;/li&gt;
+  &lt;li&gt;Если количество подписок меньше min_following_to_follow - False,&lt;/li&gt;
+  &lt;li&gt;Если количество подписок больше max_following_to_follow - False,&lt;/li&gt;
+  &lt;li&gt;Если отношение подписки / подписчики больше max_following_to_followers_ratio - False,&lt;/li&gt;
+  &lt;li&gt;Если отношение подписчики / подписки больше max_followers_to_following_ratio - False,&lt;/li&gt;
+  &lt;li&gt;Если количество медиа меньше min_media_count_to_follow - False,&lt;/li&gt;
+  &lt;li&gt;Если хотя бы одно стоп слово из stop_words есть в юзернейме, его имени или описании - False,&lt;/li&gt;
+  &lt;li&gt;Если до сих пор не отфильтровался - True.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 14 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/14/Filtration-ukr.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/14/Filtration-ukr.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Why InstaBot?</title>
+        <description>&lt;h1 id=&quot;instabot&quot;&gt;Instabot&lt;/h1&gt;
+
+&lt;p&gt;Cool Instagram scripts for promotion and API wrapper. Written in Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/docs/img/tag%20instabot.png&quot; alt=&quot;Instabot is better than other open-source bots!&quot; title=&quot;Instabot is better than other open-source bots!&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href=&quot;https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/chat%20on-Telegram-blue.svg&quot; alt=&quot;Telegram Chat&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://travis-ci.org/instagrambot/instabot&quot;&gt;&lt;img src=&quot;https://travis-ci.org/instagrambot/instabot.svg?branch=master&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As you may know, Instagram closed its API in summer 2016. This Python module can do the same things without any effort.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h2&gt;
+
+&lt;p&gt;Instabot is a module for the Python language, which not only implements the wrapper over the Instagram API, but also various useful functions, such as “subscribe to the list of people”, “like photos by hashtags”, “unsubscribe from non-followers” and so on. Instabot is smart enough: &lt;a href=&quot;/docs/en/Filtration.md&quot;&gt;read&lt;/a&gt;, for example, how it filters people on which it is going to subscribe.&lt;/p&gt;
+
+&lt;h2 id=&quot;ask-a-question&quot;&gt;Ask a Question&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;For error messages, use this &lt;a href=&quot;https://github.com/instagrambot/instabot/issues&quot;&gt;page&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;If you have questions or would like to share your experience using Instabot, please write to our &lt;a href=&quot;https://t.me/instabotproject&quot;&gt;Telegram&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;You can find answers to the most popular questions &lt;a href=&quot;/docs/en/FAQ.md&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;You can read the instructions for installing Instabot, following the link below.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Installing on &lt;a href=&quot;/docs/en/Installation_on_Windows.md&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
+  &lt;li&gt;Installing on &lt;a href=&quot;/docs/en/Installation_on_Unix.md&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-use&quot;&gt;How to use&lt;/h2&gt;
+
+&lt;p&gt;Read the instructions for use &lt;a href=&quot;/docs/en/How_to_use.md&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;update&quot;&gt;Update&lt;/h2&gt;
+
+&lt;p&gt;Since the Instabot project is young and actively developing, updates will come out quite often. So if you stumble upon an error, do not rush to bang: try to update Instabot - maybe this error has already been corrected.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;U&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;developers&quot;&gt;Developers&lt;/h2&gt;
+
+&lt;p&gt;Developers better read the &lt;a href=&quot;/docs/en/For_developers.md&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/13/why-InstaBot-en.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/why-InstaBot-en.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Why InstaBot</title>
+        <description>&lt;h1 id=&quot;instabot&quot;&gt;Instabot&lt;/h1&gt;
+
+&lt;p&gt;Script di automazione per Instagram, API Wrapper. Scritto in Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/docs/img/tag%20instabot.png&quot; alt=&quot;Instabot is better than other open-source bots!&quot; title=&quot;Instabot is better than other open-source bots!&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href=&quot;https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/chat%20on-Telegram-blue.svg&quot; alt=&quot;Chat Telegram &quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://travis-ci.org/instagrambot/instabot&quot;&gt;&lt;img src=&quot;https://travis-ci.org/instagrambot/instabot.svg?branch=master&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Come dovresti sapere, Instagram ha chiuso le sue API nell’estate del 2016. Questo modulo Python può fare le stesse cose delle API, senza sforzo.&lt;/p&gt;
+
+&lt;h2 id=&quot;che-cosè&quot;&gt;Che cos’è?&lt;/h2&gt;
+
+&lt;p&gt;Instabot è un modulo per il linguaggio python, che non racchiude soltanto un wrapper per le API Instagram, ma anche numerose funzioni molto utili, come “segui questa lista di persone”, “metti like alle foto con questo hashtag”, “non seguire più tutti quelli che non ti seguono”, e via dicendo. Instabot è piuttosto intelligente: &lt;a href=&quot;/docs/it/Filtration.md&quot;&gt;leggi&lt;/a&gt;, per esempio, per vedere come filtra le persone che sta per seguire.&lt;/p&gt;
+
+&lt;h2 id=&quot;fai-una-domanda&quot;&gt;Fai una domanda&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Per messaggi di errore, leggi questa &lt;a href=&quot;https://github.com/instagrambot/instabot/issues&quot;&gt;pagina&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Se hai dubbi, domande, perplessità, bisogno di aiuto, puoi scrivere nel gruppo &lt;a href=&quot;https://t.me/instabotproject&quot;&gt;Telegram&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Puoi trovare risposta alle domande più frequenti &lt;a href=&quot;/docs/it/FAQ.md&quot;&gt;qui&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installazione&quot;&gt;Installazione&lt;/h2&gt;
+
+&lt;p&gt;Puoi trovare le informazioni per l’installazione di Instabot, ai link sottostanti.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Installazione su &lt;a href=&quot;/docs/it/Installation_on_Windows.md&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
+  &lt;li&gt;Installazione su &lt;a href=&quot;/docs/it/Installation_on_Unix.md&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;come-si-usa&quot;&gt;Come si usa?&lt;/h2&gt;
+
+&lt;p&gt;Leggi le istruzioni all’uso &lt;a href=&quot;/docs/it/How_to_use.md&quot;&gt;qui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;aggiornamenti&quot;&gt;Aggiornamenti&lt;/h2&gt;
+
+&lt;p&gt;Siccome il progetto Instabot è giovane ed attivamente sviluppato, abbastanza spesso ci saranno aggiornamenti. Quindi se incappi in un errore, non avere fretta, prova ad aggiornare Instabot, probabilmente questo errore è già stato corretto.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;U&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;sviluppatori&quot;&gt;Sviluppatori&lt;/h2&gt;
+
+&lt;p&gt;Gli Sviluppatori possono avere maggiori informazioni leggendo la &lt;a href=&quot;/docs/it/For_developers.md&quot;&gt;documentazione&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/13/Why_InstaBot-it.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/Why_InstaBot-it.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Why InstaBot?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://github.com/instagrambot/instabot/blob/master/docs/img/tag%20instabot.png&quot; alt=&quot;Instabot is better that other open-source bots!&quot; title=&quot;Instabot is better that other open-source bots!&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;instabot&quot;&gt;Instabot&lt;/h1&gt;
+
+&lt;p&gt;Корисні скрипти для розкрутки акаунтів Instagram.&lt;/p&gt;
+
+&lt;h2 id=&quot;Що-це&quot;&gt;Що це?&lt;/h2&gt;
+
+&lt;p&gt;Instabot - це модуль для мови Python, в якому не тільки реалізована обгортка над Instagram API, але і різні корисні функції, такі як “підписатися на список людей”, “пролайкать фотки по хештегам”, “відписатися від невзаємних передплатників” і т.д. Instabot досить розумний: &lt;a href=&quot;/docs/ukr/Filtration.md&quot;&gt;почитайте&lt;/a&gt;, наприклад, як він фільтрує людей, на яких збирається підписатися.&lt;/p&gt;
+
+&lt;h2 id=&quot;Задайте-питання&quot;&gt;Задайте питання&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Для повідомлення про помилки використовуйте цю &lt;a href=&quot;https://github.com/instagrambot/instabot/issues&quot;&gt;сторінку&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Якщо ви маєте запитання або ж хочете поділитися своїм досвідом використання Instabot, будь ласка, пишіть в наш чат &lt;a href=&quot;https://t.me/instabotproject&quot;&gt;Telegram&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Ви можете знайти відповіді на найбільш популярні питання &lt;a href=&quot;/docs/ukr/FAQ.md&quot;&gt;тут&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;Установка&quot;&gt;Установка&lt;/h2&gt;
+
+&lt;p&gt;Ви можете прочитати інструкцію по установці Instabot, перейшовши за посиланням нижче.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Установка на &lt;a href=&quot;/docs/ukr/Installation_on_Windows.md&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
+  &lt;li&gt;Установка на &lt;a href=&quot;/docs/ukr/Installation_on_Unix.md&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;Як-користуватися&quot;&gt;Як користуватися&lt;/h2&gt;
+
+&lt;p&gt;Прочитати інструкцію по застосуванню можна &lt;a href=&quot;/docs/ukr/How_to_use.md&quot;&gt;тут&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;Оновлення&quot;&gt;Оновлення&lt;/h2&gt;
+
+&lt;p&gt;Так як проект Instabot молодий і активно розвивається, то оновлення виходитимуть досить часто. Тому якщо ви натрапили на помилку, не поспішайте бити в дзвони: спробуйте оновити Instabot - може бути, цю помилку вже виправили.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;U&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;Розробникам&quot;&gt;Розробникам&lt;/h2&gt;
+
+&lt;p&gt;Розробникам краще почитати &lt;a href=&quot;/docs/en/For_developers.md&quot;&gt;документацію&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/13/README-ukr.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/README-ukr.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installation on Windows</title>
+        <description>&lt;p&gt;#Інструкція по установці на Windows&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Важливо! Прочитайте інструкцію від початку до кінця, а потім дійте! Хай щастить!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;Установка-python-3&quot;&gt;Установка Python 3&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Перейдіть на сайт [Python] (https://www.python.org/downloads/).&lt;/li&gt;
+  &lt;li&gt;Виберіть відповідну вам версію (залежить від операційної системи).&lt;/li&gt;
+  &lt;li&gt;Скачайте.&lt;/li&gt;
+  &lt;li&gt;Запустіть інсталятор.&lt;/li&gt;
+  &lt;li&gt;Дотримуйтесь інструкції, яку пропонує вам установник. Поставте галочку на “Add Python 3.x to Path” і натисніть на Install Now (дивіться малюнок нижче). Якщо ви досвідчений користувач, виберіть Customize installation.
+![Install Python 3 and add to PATH] (https://github.com/damirqa/instabot/blob/master/docs/img/install_python_on_Windows.PNG “Install Python 3 and add to PATH”)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;##Завантаження проекту з GitHub&lt;/p&gt;
+
+&lt;p&gt;Є два варіанти скачування проекту:&lt;/p&gt;
+
+&lt;p&gt;a) Перейдіть по посиланню https://github.com/instagrambot/instabot. Натисніть на “Clone or download”, а потім на “Download ZIP”. Розпакуйте.&lt;/p&gt;
+
+&lt;p&gt;b) Установка клієнта Git:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Перейдіть на сайт [Git] (https://git-scm.com/downloads).&lt;/li&gt;
+  &lt;li&gt;Виберіть відповідну вам версію (залежить від операційної системи).&lt;/li&gt;
+  &lt;li&gt;Скачайте.&lt;/li&gt;
+  &lt;li&gt;Запустіть інсталятор.&lt;/li&gt;
+  &lt;li&gt;Дотримуйтесь інструкції, яку пропонує вам установник (натискайте на Next). Можете налаштувати клієнт самостійно, якщо ви - досвідчений користувач.&lt;/li&gt;
+  &lt;li&gt;Після установки запустіть командний рядок.&lt;/li&gt;
+  &lt;li&gt;У командному рядку наберіть.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instagrambot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;і натисніть на Enter.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;** Вітаю! Ви завантажили проект! **&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;Установка-instabot-у-віртуальне-оточення-python&quot;&gt;Установка instabot у віртуальне оточення Python&lt;/h2&gt;
+
+&lt;p&gt;У командному рядку наберіть.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;U&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;і натисніть Enter.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/13/Installation-on-Windows-ukr.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/Installation-on-Windows-ukr.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installation on Windows</title>
+        <description>&lt;h1 id=&quot;Инструкция-по-установке-на-windows&quot;&gt;Инструкция по установке на Windows&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Важно! Прочитайте инструкцию от начала до конца, а затем действуйте! Удачи!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;Установка-python-3&quot;&gt;Установка Python 3&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Перейдите на сайт &lt;a href=&quot;https://www.python.org/downloads/&quot;&gt;Python&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Выберите подходящую вам версию (зависит от операционной системы).&lt;/li&gt;
+  &lt;li&gt;Скачайте.&lt;/li&gt;
+  &lt;li&gt;Запустите установщик.&lt;/li&gt;
+  &lt;li&gt;Следуйте инструкции, которую предлагает вам установщик. Поставьте галочку на “Add Python 3.x to Path” и нажмите на Install Now (смотрите рисунок ниже). Если вы опытный пользователей, выберите Customize installation.
+&lt;img src=&quot;https://github.com/damirqa/instabot/blob/master/docs/img/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;Скачивание-проекта-с-github&quot;&gt;Скачивание проекта с GitHub&lt;/h2&gt;
+
+&lt;p&gt;Есть два варианта скачивания проекта:&lt;/p&gt;
+
+&lt;p&gt;a) Перейдите по ссылке https://github.com/instagrambot/instabot. Нажмите на “Clone or download”, а затем на “Download ZIP”. Распакуйте.&lt;/p&gt;
+
+&lt;p&gt;b) Установка клиента Git:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Перейдите на сайт &lt;a href=&quot;https://git-scm.com/downloads&quot;&gt;Git&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Выберите подходящую вам версию (зависит от операционной системы).&lt;/li&gt;
+  &lt;li&gt;Скачайте.&lt;/li&gt;
+  &lt;li&gt;Запустите установщик.&lt;/li&gt;
+  &lt;li&gt;Следуйте инструкции, которую предлагает вам установщик (нажимайте на Next). Можете настроить клиент самостоятельно, если вы – опытный пользователь.&lt;/li&gt;
+  &lt;li&gt;После установки запустите командную строку.&lt;/li&gt;
+  &lt;li&gt;В командной строке наберите .
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instagrambot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;и нажмите на Enter.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Поздравляю! Вы скачали проект!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;Установка-instabot-в-виртуальное-окружение-python&quot;&gt;Установка instabot в виртуальное окружение Python&lt;/h2&gt;
+
+&lt;p&gt;В командной строке наберите.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;U&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;и нажмите Enter.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/13/Installation-on-Windows-ru.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/Installation-on-Windows-ru.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installation on Windows</title>
+        <description>&lt;h1 id=&quot;istruzioni-per-linstallazione-su-windows&quot;&gt;Istruzioni per l’installazione su Windows&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Importante! Leggi le istruzioni dall’inizio alla fine, e poi passa all’utilizzo! Buona Fortuna!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installare-python-3&quot;&gt;Installare Python 3&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Vai sul sito di Python &lt;a href=&quot;https://www.python.org/downloads/&quot;&gt;vai al sito&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Scegli la versione adatta a te (dipende dal sistema operativo).&lt;/li&gt;
+  &lt;li&gt;Procedi al download della tua versione.&lt;/li&gt;
+  &lt;li&gt;Esegui l’installer.&lt;/li&gt;
+  &lt;li&gt;Segui le istruzioni dell’installer. Ricorda di mettere la spunta a “Add Python 3.x to Path” e clicca su Install Now (Guarda la figura qui sotto). Se sei un utente esperto, seleziona “Customize Installation”.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/docs/img/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;scaricare-un-progetto-da-github&quot;&gt;Scaricare un progetto da Github&lt;/h2&gt;
+
+&lt;p&gt;Ci sono due modi di scaricare un progetto:&lt;/p&gt;
+
+&lt;p&gt;a) Click sul link https://github.com/instagrambot/instabot. Click su “Clone or download”,  e successivamente “Download ZIP”. Decomprimi l’archivio.
+b) Installare il client Git:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Vai al sito di Git &lt;a href=&quot;https://git-scm.com/downloads&quot;&gt;sito&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Scegli la versione adatta a te (dipende dal sistema operativo).&lt;/li&gt;
+  &lt;li&gt;Procedi al download della tua versione.&lt;/li&gt;
+  &lt;li&gt;Esegui l’installer.&lt;/li&gt;
+  &lt;li&gt;Segui le istruzioni che ti vengono suggerite (clicca su Next). Puoi configurare il client da solo se sei un utente esperto.&lt;/li&gt;
+  &lt;li&gt;Dopo l’installazione, lancia il prompt dei comandi.&lt;/li&gt;
+  &lt;li&gt;E dal prompt dei comandi, digita:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instagrambot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Ora premi enter.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Congratulazioni! Hai scaricato il progetto!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installare-instabot-in-un-ambiente-virtuale-python&quot;&gt;Installare instabot in un ambiente virtuale Python&lt;/h2&gt;
+
+&lt;p&gt;Dal prompt dei comandi, digita:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;U&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;E premi enter.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/13/Installation-on-Windows-it.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/Installation-on-Windows-it.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installation on Windows</title>
+        <description>&lt;h1 id=&quot;installation-instructions-on-windows&quot;&gt;Installation instructions on Windows&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Important! Read the instructions from start to finish, and then act! Good luck!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-python-3&quot;&gt;Installing Python 3&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to the Python &lt;a href=&quot;https://www.python.org/downloads/&quot;&gt;website&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Choose the version that suits you (depends on the operating system).&lt;/li&gt;
+  &lt;li&gt;Download.&lt;/li&gt;
+  &lt;li&gt;Run the installer.&lt;/li&gt;
+  &lt;li&gt;Follow the instructions that the installer offers you. Check “Add Python 3.x to Path” and click on Install Now (see the figure below). If you are an experienced user, select Customize installation.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/docs/img/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;downloading-a-project-from-github&quot;&gt;Downloading a project from GitHub&lt;/h2&gt;
+
+&lt;p&gt;There are two options for downloading the project:&lt;/p&gt;
+
+&lt;p&gt;a) Click the link https://github.com/instagrambot/instabot. Click on “Clone or download”, and then on “Download ZIP”. Unpack it.
+b) Installing the Git Client:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Go to the Git &lt;a href=&quot;https://git-scm.com/downloads&quot;&gt;site&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Choose the version that suits you (depends on the operating system).&lt;/li&gt;
+  &lt;li&gt;Download.&lt;/li&gt;
+  &lt;li&gt;Run the installer.&lt;/li&gt;
+  &lt;li&gt;Follow the instructions that the installer suggests (click on Next). You can configure the client yourself if you are an experienced user.&lt;/li&gt;
+  &lt;li&gt;After installation, run the command line.&lt;/li&gt;
+  &lt;li&gt;At the command prompt, type.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instagrambot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;And press Enter.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Congratulations! You downloaded the project!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-instabot-in-a-virtual-python-environment&quot;&gt;Installing instabot in a virtual Python environment&lt;/h2&gt;
+
+&lt;p&gt;At the command prompt, type.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;U&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instabot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;And press Enter.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/13/Installation-on-Windows-en.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/Installation-on-Windows-en.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installation on Unix</title>
+        <description>&lt;h1 id=&quot;Як-встановити-на-unix-систему-linux-macos&quot;&gt;Як встановити на UNIX систему? (Linux, macOS)&lt;/h1&gt;
+
+&lt;p&gt;Відео інструкція.&lt;/p&gt;
+
+&lt;p&gt;[! [Установка Instabot на macOS] (http://img.youtube.com/vi/aJUHmv3NhRE/0.jpg)] (https://youtu.be/aJUHmv3NhRE)&lt;/p&gt;
+
+&lt;h2 id=&quot;Покрокова-інструкція&quot;&gt;Покрокова інструкція&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Відкрийте термінал.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install -U instabot
+git clone https://github.com/instagrambot/instabot
+cd instabot/examples
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;*І після цього обирайте будь-який скрипт з папки &lt;em&gt;examples/&lt;/em&gt;, наприклад, &lt;em&gt;multi_script_CLI.py&lt;/em&gt; і виконайте так:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python multi_script_CLI.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;Що-робити-якщо-помилки&quot;&gt;Що робити, якщо помилки&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Якщо пише &lt;code class=&quot;highlighter-rouge&quot;&gt;pip: command not found&lt;/code&gt;, встановіть pip і спробуйте ще раз:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo easy_install pip
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Якщо після &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install -U instabot&lt;/code&gt; виведе багато помилок і текст &lt;code class=&quot;highlighter-rouge&quot;&gt;permission denied&lt;/code&gt;, впишіть sudo:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo pip install -U instabot
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/10/13/Installation-on-Unix-ukr.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/Installation-on-Unix-ukr.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
