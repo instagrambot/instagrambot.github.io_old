@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "For Developers"
+title: "Per gli sviluppatori"
 date: 2017-10-13 23:29:00 +0900
 tags: blog
 comments: false

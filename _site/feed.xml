@@ -5,12 +5,12 @@
     <description>Cool Instagram scripts for promotion and API wrapper. Written in Python.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Oct 2017 00:17:55 +0530</pubDate>
-    <lastBuildDate>Mon, 16 Oct 2017 00:17:55 +0530</lastBuildDate>
+    <pubDate>Mon, 16 Oct 2017 19:06:04 +0530</pubDate>
+    <lastBuildDate>Mon, 16 Oct 2017 19:06:04 +0530</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
-        <title>How to use</title>
+        <title>Як використовувати</title>
         <description>&lt;h1 id=&quot;Інструкція-по-застосуванню&quot;&gt;Інструкція по застосуванню&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Важливо! Прочитайте інструкцію від початку до кінця, а потім дійте! Хай щастить!&lt;/strong&gt;&lt;/p&gt;
@@ -242,7 +242,7 @@
       </item>
     
       <item>
-        <title>Filtration</title>
+        <title>Фільтрація</title>
         <description>&lt;h1 id=&quot;Как-instabot-фильтрует-людей&quot;&gt;Как Instabot фильтрует людей?&lt;/h1&gt;
 
 &lt;p&gt;Не секрет, что Instabot перед тем, как подписаться на людей, фильтрует их, чтобы не подписываться на заведомо неактивную и фейковую аудиторию. Ниже вы найдете весь список условий, которые применяются в данной фильтрации.&lt;/p&gt;
@@ -357,12 +357,12 @@
       </item>
     
       <item>
-        <title>Why InstaBot</title>
+        <title>Perché InstaBot</title>
         <description>&lt;h1 id=&quot;instabot&quot;&gt;Instabot&lt;/h1&gt;
 
 &lt;p&gt;Script di automazione per Instagram, API Wrapper. Scritto in Python.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/docs/img/tag%20instabot.png&quot; alt=&quot;Instabot is better than other open-source bots!&quot; title=&quot;Instabot is better than other open-source bots!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/instabot.png&quot; alt=&quot;Instabot is better than other open-source bots!&quot; title=&quot;Instabot is better than other open-source bots!&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;a href=&quot;https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/chat%20on-Telegram-blue.svg&quot; alt=&quot;Chat Telegram &quot; /&gt;&lt;/a&gt;
@@ -372,27 +372,27 @@
 
 &lt;h2 id=&quot;che-cosè&quot;&gt;Che cos’è?&lt;/h2&gt;
 
-&lt;p&gt;Instabot è un modulo per il linguaggio python, che non racchiude soltanto un wrapper per le API Instagram, ma anche numerose funzioni molto utili, come “segui questa lista di persone”, “metti like alle foto con questo hashtag”, “non seguire più tutti quelli che non ti seguono”, e via dicendo. Instabot è piuttosto intelligente: &lt;a href=&quot;/docs/it/Filtration.md&quot;&gt;leggi&lt;/a&gt;, per esempio, per vedere come filtra le persone che sta per seguire.&lt;/p&gt;
+&lt;p&gt;Instabot è un modulo per il linguaggio python, che non racchiude soltanto un wrapper per le API Instagram, ma anche numerose funzioni molto utili, come “segui questa lista di persone”, “metti like alle foto con questo hashtag”, “non seguire più tutti quelli che non ti seguono”, e via dicendo. Instabot è piuttosto intelligente: &lt;a href=&quot;/2017/10/13/Filtration-it.html&quot;&gt;leggi&lt;/a&gt;, per esempio, per vedere come filtra le persone che sta per seguire.&lt;/p&gt;
 
 &lt;h2 id=&quot;fai-una-domanda&quot;&gt;Fai una domanda&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Per messaggi di errore, leggi questa &lt;a href=&quot;https://github.com/instagrambot/instabot/issues&quot;&gt;pagina&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Se hai dubbi, domande, perplessità, bisogno di aiuto, puoi scrivere nel gruppo &lt;a href=&quot;https://t.me/instabotproject&quot;&gt;Telegram&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Puoi trovare risposta alle domande più frequenti &lt;a href=&quot;/docs/it/FAQ.md&quot;&gt;qui&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Puoi trovare risposta alle domande più frequenti &lt;a href=&quot;/2017/10/13/FAQ-it.html&quot;&gt;qui&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;installazione&quot;&gt;Installazione&lt;/h2&gt;
 
 &lt;p&gt;Puoi trovare le informazioni per l’installazione di Instabot, ai link sottostanti.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Installazione su &lt;a href=&quot;/docs/it/Installation_on_Windows.md&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
-  &lt;li&gt;Installazione su &lt;a href=&quot;/docs/it/Installation_on_Unix.md&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Installazione su &lt;a href=&quot;/2017/10/13/Installation-on-Windows-it.html&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
+  &lt;li&gt;Installazione su &lt;a href=&quot;/2017/10/13/Installation-on-Unix-it.html&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;come-si-usa&quot;&gt;Come si usa?&lt;/h2&gt;
 
-&lt;p&gt;Leggi le istruzioni all’uso &lt;a href=&quot;/docs/it/How_to_use.md&quot;&gt;qui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Leggi le istruzioni all’uso &lt;a href=&quot;/2017/10/13/How-to-use-it.html&quot;&gt;qui&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;aggiornamenti&quot;&gt;Aggiornamenti&lt;/h2&gt;
 
@@ -404,7 +404,8 @@
 
 &lt;h2 id=&quot;sviluppatori&quot;&gt;Sviluppatori&lt;/h2&gt;
 
-&lt;p&gt;Gli Sviluppatori possono avere maggiori informazioni leggendo la &lt;a href=&quot;/docs/it/For_developers.md&quot;&gt;documentazione&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Gli Sviluppatori possono avere maggiori informazioni leggendo la 
+&lt;a href=&quot;/2017/10/13/For-developers-it.html&quot;&gt;documentazione&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
         <link>http://localhost:4000/2017/10/13/Why_InstaBot-it.html</link>
@@ -416,8 +417,8 @@
       </item>
     
       <item>
-        <title>Why InstaBot?</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://github.com/instagrambot/instabot/blob/master/docs/img/tag%20instabot.png&quot; alt=&quot;Instabot is better that other open-source bots!&quot; title=&quot;Instabot is better that other open-source bots!&quot; /&gt;&lt;/p&gt;
+        <title>Чому InstaBot?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/instabot.png&quot; alt=&quot;Instabot is better that other open-source bots!&quot; title=&quot;Instabot is better that other open-source bots!&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;instabot&quot;&gt;Instabot&lt;/h1&gt;
 
@@ -425,27 +426,27 @@
 
 &lt;h2 id=&quot;Що-це&quot;&gt;Що це?&lt;/h2&gt;
 
-&lt;p&gt;Instabot - це модуль для мови Python, в якому не тільки реалізована обгортка над Instagram API, але і різні корисні функції, такі як “підписатися на список людей”, “пролайкать фотки по хештегам”, “відписатися від невзаємних передплатників” і т.д. Instabot досить розумний: &lt;a href=&quot;/docs/ukr/Filtration.md&quot;&gt;почитайте&lt;/a&gt;, наприклад, як він фільтрує людей, на яких збирається підписатися.&lt;/p&gt;
+&lt;p&gt;Instabot - це модуль для мови Python, в якому не тільки реалізована обгортка над Instagram API, але і різні корисні функції, такі як “підписатися на список людей”, “пролайкать фотки по хештегам”, “відписатися від невзаємних передплатників” і т.д. Instabot досить розумний: &lt;a href=&quot;/2017/10/14/Filtration-ukr.html&quot;&gt;почитайте&lt;/a&gt;, наприклад, як він фільтрує людей, на яких збирається підписатися.&lt;/p&gt;
 
 &lt;h2 id=&quot;Задайте-питання&quot;&gt;Задайте питання&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Для повідомлення про помилки використовуйте цю &lt;a href=&quot;https://github.com/instagrambot/instabot/issues&quot;&gt;сторінку&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Якщо ви маєте запитання або ж хочете поділитися своїм досвідом використання Instabot, будь ласка, пишіть в наш чат &lt;a href=&quot;https://t.me/instabotproject&quot;&gt;Telegram&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Ви можете знайти відповіді на найбільш популярні питання &lt;a href=&quot;/docs/ukr/FAQ.md&quot;&gt;тут&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Ви можете знайти відповіді на найбільш популярні питання &lt;a href=&quot;/2017/10/13/FAQ-ukr.html&quot;&gt;тут&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;Установка&quot;&gt;Установка&lt;/h2&gt;
 
 &lt;p&gt;Ви можете прочитати інструкцію по установці Instabot, перейшовши за посиланням нижче.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Установка на &lt;a href=&quot;/docs/ukr/Installation_on_Windows.md&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
-  &lt;li&gt;Установка на &lt;a href=&quot;/docs/ukr/Installation_on_Unix.md&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Установка на &lt;a href=&quot;/2017/10/13/Installation-on-Windows-ukr.html&quot;&gt;Windows&lt;/a&gt;,&lt;/li&gt;
+  &lt;li&gt;Установка на &lt;a href=&quot;/2017/10/13/Installation-on-Unix-ukr.html&quot;&gt;Unix&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;Як-користуватися&quot;&gt;Як користуватися&lt;/h2&gt;
 
-&lt;p&gt;Прочитати інструкцію по застосуванню можна &lt;a href=&quot;/docs/ukr/How_to_use.md&quot;&gt;тут&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Прочитати інструкцію по застосуванню можна &lt;a href=&quot;/2017/10/14/How-to-use-ukr.html&quot;&gt;тут&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;Оновлення&quot;&gt;Оновлення&lt;/h2&gt;
 
@@ -457,7 +458,7 @@
 
 &lt;h2 id=&quot;Розробникам&quot;&gt;Розробникам&lt;/h2&gt;
 
-&lt;p&gt;Розробникам краще почитати &lt;a href=&quot;/docs/en/For_developers.md&quot;&gt;документацію&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Розробникам краще почитати &lt;a href=&quot;/2017/10/13/For-developers-en.html&quot;&gt;документацію&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Oct 2017 19:59:00 +0530</pubDate>
         <link>http://localhost:4000/2017/10/13/README-ukr.html</link>
@@ -477,12 +478,12 @@
 &lt;h2 id=&quot;Установка-python-3&quot;&gt;Установка Python 3&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Перейдіть на сайт [Python] (https://www.python.org/downloads/).&lt;/li&gt;
+  &lt;li&gt;Перейдіть на сайт &lt;a href=&quot;https://www.python.org/downloads/&quot;&gt;Python&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Виберіть відповідну вам версію (залежить від операційної системи).&lt;/li&gt;
   &lt;li&gt;Скачайте.&lt;/li&gt;
   &lt;li&gt;Запустіть інсталятор.&lt;/li&gt;
   &lt;li&gt;Дотримуйтесь інструкції, яку пропонує вам установник. Поставте галочку на “Add Python 3.x to Path” і натисніть на Install Now (дивіться малюнок нижче). Якщо ви досвідчений користувач, виберіть Customize installation.
-![Install Python 3 and add to PATH] (https://github.com/damirqa/instabot/blob/master/docs/img/install_python_on_Windows.PNG “Install Python 3 and add to PATH”)&lt;/li&gt;
+&lt;img src=&quot;/assets/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;##Завантаження проекту з GitHub&lt;/p&gt;
@@ -493,7 +494,7 @@
 
 &lt;p&gt;b) Установка клієнта Git:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Перейдіть на сайт [Git] (https://git-scm.com/downloads).&lt;/li&gt;
+  &lt;li&gt;Перейдіть на сайт &lt;a href=&quot;https://git-scm.com/downloads&quot;&gt;Git&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Виберіть відповідну вам версію (залежить від операційної системи).&lt;/li&gt;
   &lt;li&gt;Скачайте.&lt;/li&gt;
   &lt;li&gt;Запустіть інсталятор.&lt;/li&gt;
@@ -527,7 +528,7 @@
       </item>
     
       <item>
-        <title>Installation on Windows</title>
+        <title>Установка в Windows</title>
         <description>&lt;h1 id=&quot;Инструкция-по-установке-на-windows&quot;&gt;Инструкция по установке на Windows&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Важно! Прочитайте инструкцию от начала до конца, а затем действуйте! Удачи!&lt;/strong&gt;&lt;/p&gt;
@@ -540,7 +541,7 @@
   &lt;li&gt;Скачайте.&lt;/li&gt;
   &lt;li&gt;Запустите установщик.&lt;/li&gt;
   &lt;li&gt;Следуйте инструкции, которую предлагает вам установщик. Поставьте галочку на “Add Python 3.x to Path” и нажмите на Install Now (смотрите рисунок ниже). Если вы опытный пользователей, выберите Customize installation.
-&lt;img src=&quot;https://github.com/damirqa/instabot/blob/master/docs/img/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/assets/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;Скачивание-проекта-с-github&quot;&gt;Скачивание проекта с GitHub&lt;/h2&gt;
@@ -585,7 +586,7 @@
       </item>
     
       <item>
-        <title>Installation on Windows</title>
+        <title>Installazione su Windows</title>
         <description>&lt;h1 id=&quot;istruzioni-per-linstallazione-su-windows&quot;&gt;Istruzioni per l’installazione su Windows&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Importante! Leggi le istruzioni dall’inizio alla fine, e poi passa all’utilizzo! Buona Fortuna!&lt;/strong&gt;&lt;/p&gt;
@@ -600,7 +601,7 @@
   &lt;li&gt;Segui le istruzioni dell’installer. Ricorda di mettere la spunta a “Add Python 3.x to Path” e clicca su Install Now (Guarda la figura qui sotto). Se sei un utente esperto, seleziona “Customize Installation”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;/docs/img/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/install_python_on_Windows.PNG&quot; alt=&quot;Install Python 3 and add to PATH&quot; title=&quot;Install Python 3 and add to PATH&quot; /&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;scaricare-un-progetto-da-github&quot;&gt;Scaricare un progetto da Github&lt;/h2&gt;
 
@@ -708,7 +709,7 @@ b) Installing the Git Client:&lt;/p&gt;
 
 &lt;p&gt;Відео інструкція.&lt;/p&gt;
 
-&lt;p&gt;[! [Установка Instabot на macOS] (http://img.youtube.com/vi/aJUHmv3NhRE/0.jpg)] (https://youtu.be/aJUHmv3NhRE)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/aJUHmv3NhRE&quot;&gt;! [Установка Instabot на macOS] (http://img.youtube.com/vi/aJUHmv3NhRE/0.jpg)&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;Покрокова-інструкція&quot;&gt;Покрокова інструкція&lt;/h2&gt;
 

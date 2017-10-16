@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Filtration"
+title: "Фільтрація"
 date: 2017-10-14 23:29:00 +0900
 tags: blog
 comments: false

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Why InstaBot?"
+title: "Чому InstaBot?"
 date: 2017-10-13 23:29:00 +0900
 tags: blog
 comments: false
 lang: ukr
 ---
-![Instabot is better that other open-source bots!](https://github.com/instagrambot/instabot/blob/master/docs/img/tag%20instabot.png "Instabot is better that other open-source bots!")
+![Instabot is better that other open-source bots!](/assets/instabot.png "Instabot is better that other open-source bots!")
 
 # Instabot
 
@@ -14,23 +14,23 @@ lang: ukr
 
 ## Що це?
 
-Instabot - це модуль для мови Python, в якому не тільки реалізована обгортка над Instagram API, але і різні корисні функції, такі як "підписатися на список людей", "пролайкать фотки по хештегам", "відписатися від невзаємних передплатників" і т.д. Instabot досить розумний: [почитайте](/docs/ukr/Filtration.md), наприклад, як він фільтрує людей, на яких збирається підписатися.
+Instabot - це модуль для мови Python, в якому не тільки реалізована обгортка над Instagram API, але і різні корисні функції, такі як "підписатися на список людей", "пролайкать фотки по хештегам", "відписатися від невзаємних передплатників" і т.д. Instabot досить розумний: [почитайте](/2017/10/14/Filtration-ukr.html), наприклад, як він фільтрує людей, на яких збирається підписатися.
 
 ## Задайте питання
 
 * Для повідомлення про помилки використовуйте цю [сторінку](https://github.com/instagrambot/instabot/issues).
 * Якщо ви маєте запитання або ж хочете поділитися своїм досвідом використання Instabot, будь ласка, пишіть в наш чат [Telegram](https://t.me/instabotproject).
-* Ви можете знайти відповіді на найбільш популярні питання [тут](/docs/ukr/FAQ.md).
+* Ви можете знайти відповіді на найбільш популярні питання [тут](/2017/10/13/FAQ-ukr.html).
 
 ## Установка
 
 Ви можете прочитати інструкцію по установці Instabot, перейшовши за посиланням нижче.
-* Установка на [Windows](/docs/ukr/Installation_on_Windows.md),
-* Установка на [Unix](/docs/ukr/Installation_on_Unix.md).
+* Установка на [Windows](/2017/10/13/Installation-on-Windows-ukr.html),
+* Установка на [Unix](/2017/10/13/Installation-on-Unix-ukr.html).
 
 ## Як користуватися
 
-Прочитати інструкцію по застосуванню можна [тут](/docs/ukr/How_to_use.md).
+Прочитати інструкцію по застосуванню можна [тут](/2017/10/14/How-to-use-ukr.html).
 
 ## Оновлення
 
@@ -42,4 +42,4 @@ pip install -U instabot
 
 ## Розробникам
 
-Розробникам краще почитати [документацію](/docs/en/For_developers.md).
+Розробникам краще почитати [документацію](/2017/10/13/For-developers-en.html).

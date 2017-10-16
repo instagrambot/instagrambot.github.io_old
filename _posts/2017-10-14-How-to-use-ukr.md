@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to use"
+title: "Як використовувати"
 date: 2017-10-14 23:29:00 +0900
 tags: blog
 comments: false

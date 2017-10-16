@@ -12,12 +12,12 @@ lang: ukr
 
 ## Установка Python 3
 
-1. Перейдіть на сайт [Python] (https://www.python.org/downloads/).
+1. Перейдіть на сайт [Python](https://www.python.org/downloads/).
 2. Виберіть відповідну вам версію (залежить від операційної системи).
 3. Скачайте.
 4. Запустіть інсталятор.
 5. Дотримуйтесь інструкції, яку пропонує вам установник. Поставте галочку на "Add Python 3.x to Path" і натисніть на Install Now (дивіться малюнок нижче). Якщо ви досвідчений користувач, виберіть Customize installation.
-![Install Python 3 and add to PATH] (https://github.com/damirqa/instabot/blob/master/docs/img/install_python_on_Windows.PNG "Install Python 3 and add to PATH")
+![Install Python 3 and add to PATH](/assets/install_python_on_Windows.PNG "Install Python 3 and add to PATH")
 
 ##Завантаження проекту з GitHub
 
@@ -26,7 +26,7 @@ lang: ukr
 a) Перейдіть по посиланню https://github.com/instagrambot/instabot. Натисніть на "Clone or download", а потім на "Download ZIP". Розпакуйте.
 
 b) Установка клієнта Git:
-1. Перейдіть на сайт [Git] (https://git-scm.com/downloads).
+1. Перейдіть на сайт [Git](https://git-scm.com/downloads).
 2. Виберіть відповідну вам версію (залежить від операційної системи).
 3. Скачайте.
 4. Запустіть інсталятор.

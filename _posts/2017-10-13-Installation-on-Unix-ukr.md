@@ -10,7 +10,7 @@ lang: ukr
 
 Відео інструкція.
 
-[! [Установка Instabot на macOS] (http://img.youtube.com/vi/aJUHmv3NhRE/0.jpg)] (https://youtu.be/aJUHmv3NhRE)
+[! [Установка Instabot на macOS] (http://img.youtube.com/vi/aJUHmv3NhRE/0.jpg)](https://youtu.be/aJUHmv3NhRE)
 
 ## Покрокова інструкція
 

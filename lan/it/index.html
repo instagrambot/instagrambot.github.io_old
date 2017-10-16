@@ -5,11 +5,11 @@ title: Blog
 
 <div class="home">
   <ul class="post-list">
-  {% assign posts=site.posts | where:"lang", "ru" %}
+  {% assign posts=site.posts | where:"lang", "it" %}
 
     {% for post in posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
@@ -18,4 +18,4 @@ title: Blog
   </ul>
 </div>
 
-{% include pagination.html %}
+<!-- {% include pagination.html %}-->

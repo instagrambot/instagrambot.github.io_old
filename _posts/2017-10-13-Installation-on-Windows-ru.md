@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Installation on Windows"
+title: "Установка в Windows"
 date: 2017-10-13 23:29:00 +0900
 tags: blog
 comments: false
@@ -17,7 +17,7 @@ lang: ru
 3. Скачайте.
 4. Запустите установщик.
 5. Следуйте инструкции, которую предлагает вам установщик. Поставьте галочку на “Add Python 3.x to Path” и нажмите на Install Now (смотрите рисунок ниже). Если вы опытный пользователей, выберите Customize installation.
-![Install Python 3 and add to PATH](https://github.com/damirqa/instabot/blob/master/docs/img/install_python_on_Windows.PNG "Install Python 3 and add to PATH")
+![Install Python 3 and add to PATH](/assets/install_python_on_Windows.PNG "Install Python 3 and add to PATH")
 
 ## Скачивание проекта с GitHub
 

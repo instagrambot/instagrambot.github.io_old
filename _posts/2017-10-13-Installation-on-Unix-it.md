@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Installation on Unix"
+title: "Installazione su Unix"
 date: 2017-10-13 23:29:00 +0900
 tags: blog
 comments: false
